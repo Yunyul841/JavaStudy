@@ -22,7 +22,7 @@ public class _00_BasicArray {
 			lotto[0]=lotto[1]+lotto[2];
 			System.out.println(lotto[0]+"/"+lotto[1]+ "/"+lotto[2]);
 			System.out.println(lotto[0]+20);
-			System.out.println(lotto[0]+"/"+lotto[1]+ "/"+lotto[2]);
+			System.out.println(lotto[0]+"/"+lotto[1]+ "/"+lotto[2]);f
 			lotto[3]=lotto[1]+20;	// 3번 인덱스가 없음.
 									// 예외발생 ArrayIndexOutOfBoundsExcepyion
 			
