@@ -38,15 +38,44 @@ public class _03과제 {
 				}
 			}
 			System.out.println(max);
+			System.out.println("---------");
 	
 			
 		//３번　문제　비밀편지
 		//String word ="gehoudfkimjnlvy";
 		//int[] letter={8,12,3,13,1,14,3,4};
 		//letter  배열은 word문자열 알파벳의 위치이다.
-		//letter배열의 암호를 풀어서 편지의 내용을 출력하시오. 
+		//letter배열의 암호를 풀어서 편지의 내용을 출력하시오.
+			
+		String word ="gehoudfkimjnlvy";
+		int[] letter4={8,12,3,13,1,14,3,4};
+		String resultWord = "";
+		for(int i=0; i < letter4.length; i++) {
+			resultWord += word .charAt(letter4[i]);
+			//System.out.print(word .charAt(letter[i]));
+		}
+		System.out.print(resultWord);
+		System.out.println();
+		System.out.println("---------");
+	
 		
 
+		//4 난건물주
+		//arr 배열에서 0이 의미하는 것은 공터이다. 
+		//size는 건물의 크기 이다. 건물은 하나만 짓는다. 공터는 연속적으로 있어야 한다. 
+		//size 설정값에 따라 공터에 건물을 지을 수 있는 위치는 모두 몇개인가?
+		//size가 2일경우에 7개이다. 
+		// 2 2 3 3 2
+		int[] arr = {1,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1};
+		int cnt = 0;
+		int size = 2;
+		for(int i = 7; i  < arr.length-1; i++) {
+			if(arr[i] + arr[i+1] == 0) {
+				cnt++;
+			}
+		}
+		System.out.println(cnt);
 	}
 }
+
 	
