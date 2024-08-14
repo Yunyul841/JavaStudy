@@ -12,6 +12,15 @@ public class _05과제 {
 			//System.out.print(word .charAt(letter[i]));
 		}
 		System.out.print(resultWord);
+		System.out.println("");
+		
+		//홀수만 출력
+		int[] letter1={8,12,4,13,2,14,4,5};
+		for(int i = 0; i <letter1.length; i++) {
+			if(letter1[i]%2==1) {
+				System.out.print(letter1[i]+",");
+			}
+		}
 		}
 	}
 

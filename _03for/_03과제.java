@@ -42,19 +42,19 @@ public class _03과제 {
 	
 			
 		//３번　문제　비밀편지
-		//String word ="gehoudfkimjnlvy";
-		//int[] letter={8,12,3,13,1,14,3,4};
-		//letter  배열은 word문자열 알파벳의 위치이다.
+		//String word ="gehoudfkimjnlvy";  문자열
+		//int[] letter={8,12,3,13,1,14,3,4}; 배열은8 인덱스 7
+		//letter  배열은 word문자열 알파벳의 위치이다. 
 		//letter배열의 암호를 풀어서 편지의 내용을 출력하시오.
 			
-		String word ="gehoudfkimjnlvy";
 		int[] letter4={8,12,3,13,1,14,3,4};
-		String resultWord = "";
+		String word ="gehoudfkimjnlvy";
+		String result = "";
 		for(int i=0; i < letter4.length; i++) {
-			resultWord += word .charAt(letter4[i]);
+			result += word .charAt(letter4[i]);
 			//System.out.print(word .charAt(letter[i]));
 		}
-		System.out.print(resultWord);
+		System.out.print(result);
 		System.out.println();
 		System.out.println("---------");
 	
