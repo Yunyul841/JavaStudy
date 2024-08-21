@@ -16,7 +16,6 @@ public class _12_2번쨰문제 {
 			sum += fact + " ";	// fact의 값을 SUM의 대입 
 			fact = 1; 	//fact의 값을 초기화 
 		}
-		
 		System.out.println(sum);
 	}
 }
