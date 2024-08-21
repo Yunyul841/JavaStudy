@@ -1,6 +1,6 @@
 package _05_2중For;
 
-public class _12_2번쨰문제 {
+public class _13_2번쨰문제 {
 
 	public static void main(String[] args) {
 		//	3. 팩토리얼의 합 구하기 b (2중 for로 해결)

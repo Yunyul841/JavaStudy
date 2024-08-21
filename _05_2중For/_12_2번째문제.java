@@ -1,4 +1,4 @@
-package _05_2중For;
+ package _05_2중For;
 
 import java.util.Scanner;
 
@@ -18,3 +18,4 @@ public class _12_2번째문제 {
 	}
 
 }
+  

@@ -2,7 +2,6 @@ package _04_Random;
 
 import java.util.Random;
 import java.util.Scanner;
-
 public class _02_과제 {
 
 	public static void main(String[] args) {
@@ -50,8 +49,9 @@ public class _02_과제 {
 			}else {
 				continue;
 			}
+
+			
+		}
 			
 		}		
-		
-	}
 }
