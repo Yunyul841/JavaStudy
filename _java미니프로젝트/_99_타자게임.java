@@ -26,7 +26,7 @@ public class _99_타자게임 {
 	      String a;
 	      String pa;
 	      String name;
-	      do {         
+	       
 	         int sum = 0;
 	         int cnt = 0;
 	         int num = 5;
@@ -34,7 +34,7 @@ public class _99_타자게임 {
 	         name = sc.nextLine();
 	         System.out.println(name+"님 다음 출력된 단어를 입력하세요 총 "+num+"문제입니다.");
 	         for (int i=0; i < num; i++) {
-	            String randomWord = key[r.nextInt(key.length)]; //
+	            String randomWord = key[r.nextInt(key.length)]; 
 	            System.out.println(randomWord);
 	            a = sc.nextLine();
 	            if(randomWord.equals(a)==true) {
@@ -48,9 +48,10 @@ public class _99_타자게임 {
 	         }System.out.println(name+"님의 총점은 "+YELLOW+sum+RESET+"점 정확도는 "+BLUE+20*cnt+RESET+"% 입니다" );
 	         System.out.println(WHITE + "다시 실행하겠습니까? (예/아니오) : "+RESET);
 	         pa = sc.nextLine();
-	      } while (pa.equals("예"));
+	       while (pa.equals("예"));
 	      System.out.println("프로그램을 종료합니다");
 	      sc.close();
+	    
 	   }
 		
 	}
