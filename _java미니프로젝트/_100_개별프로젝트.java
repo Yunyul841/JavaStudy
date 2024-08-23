@@ -34,10 +34,11 @@ public class _100_개별프로젝트 {
 			System.out.println(randomWord);
 			abc = in.nextLine();
 			if (randomWord.equals(abc) == true) {
-				System.out.println("정답이야!! 다음문제 Go~");
+				System.out.println("정답이야!! ");
 				sum += 20; // 정답일떄 20점이 sum에 저장
 				cnt++; // 횟수 증가
 				System.out.println(sum + "점");
+				System.out.println("다음문제 Go~");
 			} else {
 				System.out.println("오답이잖아 정신 안차려? 죽을래??");
 				System.out.println("정신 차리고 다시 가보자!");
@@ -57,10 +58,9 @@ public class _100_개별프로젝트 {
 			}
 
 		}
-		System.out.println("다음 게임도 Go? 진짜 완전 꿀잼일거!!");
+		System.out.println("다음 게임도 Go?");
 		System.out.println("-----------------------------");
-		while (ac.equals("예"));
-		System.out.println("게임을 시작하지~");
+		System.out.println("다음 게임을 시작하지~");
 		for (int i = 0; i < word1.length; i++) {
 			String randomWord = word1[r.nextInt(word1.length)];
 			System.out.println(randomWord);
@@ -78,6 +78,7 @@ public class _100_개별프로젝트 {
 			}
 			if(yul >= 5 && yun == 100) {
 				System.out.println("너 진짜 너무 잘한다..");
+				System.out.println("게임을 종료할게~");
 				break;
 			}else if(yul == 5) {
 				System.out.println("중간 집계를 한다~" + yun + "점입니");
@@ -85,7 +86,7 @@ public class _100_개별프로젝트 {
 				continue;
 			}
 
+			
 		}
-
 	}
 }
