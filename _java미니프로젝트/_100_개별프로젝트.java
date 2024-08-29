@@ -20,6 +20,7 @@ public class _100_개별프로젝트 {
 		String abc = "";
 		String zxc = "";
 		String ac = "";
+		String level ="";
 		System.out.println("자! 게임을 시작한다잉~");
 		System.out.println("3");
 		System.out.println("2");
@@ -57,36 +58,42 @@ public class _100_개별프로젝트 {
 			}
 
 		}
-		System.out.println("다음 게임도 Go?");
-		System.out.println("-----------------------------");
-		System.out.println("다음 게임을 시작하지~");
-		for (int i = 0; i < word1.length; i++) {
-			String randomWord = word1[r.nextInt(word1.length)];
-			System.out.println(randomWord);
-			zxc = in.nextLine();
-			if (randomWord.equals(zxc) == true) {
-				System.out.println("정답이야~");
-				yun += 20;
-				yul ++;
-				System.out.println(yun + "점");
-			} else {
-				System.out.println("정답이 아니야~");
-				yun -= 20;
-				yul ++;
-				System.out.println(yun + "점");
-			}
-			if(yul >= 5 && yun == 100) {
-				System.out.println("너 진짜 너무 잘한다..");
-				System.out.println("게임을 종료할게~");
-				break;
-			}else if(yul == 5) {
-				System.out.println("중간 집계를 한다~" + yun + "점입니");
-				System.out.println("100점이 될 때 까지 계속 해라~~~");
-				continue; // 컨티뉴로 for문을 다시 계속 돈디.
+		System.out.println("다음 단곌로 넘어갈거야?");
+		level = in.nextLine();
+		if(level.equals("네")) {
+//			System.out.println("다음 게임도 Go?");
+			System.out.println("-----------------------------");
+			System.out.println("다음 게임을 시작하지~");
+			for (int i = 0; i < word1.length; i++) {
+				String randomWord = word1[r.nextInt(word1.length)];
+				System.out.println(randomWord);
+				zxc = in.nextLine();
+				if (randomWord.equals(zxc) == true) {
+					System.out.println("정답이야~");
+					yun += 20;
+					yul ++;
+					System.out.println(yun + "점");
+				} else {
+					System.out.println("정답이 아니야~");
+					yun -= 20;
+					yul ++;
+					System.out.println(yun + "점");
+				}
+				if(yul >= 5 && yun == 100) {
+					System.out.println("너 진짜 너무 잘한다..");
+					System.out.println("너무 잘해서 게임을 종료할게ㅠ");
+					System.out.println("조심히 가ㅠㅠ 안뇽~");
+					break;
+				}else if(yul == 5) {
+					System.out.println("중간 집계를 한다~" + yun + "점입니");
+					System.out.println("100점이 될 때 까지 계속 해라~~~");
+					continue;
+				}
 				
 			}
+		}else {
+			System.out.println("고생했어~");
 
-			
 		}
 	}
 }

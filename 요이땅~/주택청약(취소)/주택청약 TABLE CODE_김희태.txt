@@ -1,0 +1,17 @@
+주택청약 TABLE
+
+create table applyhome (
+id varchar2(8),
+income varchar2(10) not null,
+age number(3) not null,
+house varchar2(1) check(in house('o','x')),
+constraint fk_applyhome_id foreign key(id) references pk 테이블명(id)
+);
+
+INSERT INTO APPLYHOME VALUES('A','1억','23세','X');					
+INSERT INTO APPLYHOME VALUES('B','5000만원','30세','X');					
+INSERT INTO APPLYHOME VALUES('C','3억5000만원','58세','O');					
+INSERT INTO APPLYHOME VALUES('D','3000만원','26세','X');					
+INSERT INTO APPLYHOME VALUES('E','15억','23세','O');					
+INSERT INTO APPLYHOME VALUES('F','2억7000만원','43세','X');					
+INSERT INTO APPLYHOME VALUES('G','1300만원','21세','X');					
