@@ -10,9 +10,10 @@ public class _01_문제 {
 					 {16,17,18,19,20},
 					 {21,22,23,24,25}};
 		
-		for(int i = 0; i < 5; i++) {
-				System.out.print(a[2][i]+ "\t");
-			
+		for(int i = 0; i < a.length; i++) {
+			System.out.print(a[2][i]+" ");
+		}
+		
 			
 		}
 				
@@ -22,4 +23,4 @@ public class _01_문제 {
 
 	}
 
-}
+

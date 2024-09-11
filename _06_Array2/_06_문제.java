@@ -11,8 +11,8 @@ public class _06_문제 {
 				 	 {16,17,18,19,20},
 				 	 {21,22,23,24,25}};
 		
-		for(int i = 4; i >= 1; i--) {
-			for(int j = 4; j >= 1; j--) {
+		for(int i = 4; i >= 0; i--) {
+			for(int j = 4; j >= 0; j--) {
 				System.out.print(a[i][j]+"\t");
 			} 
 			System.out.println();

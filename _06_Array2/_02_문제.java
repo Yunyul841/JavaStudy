@@ -9,12 +9,11 @@ public class _02_문제 {
 					 {11,12,13,14,15},
 					 {16,17,18,19,20},
 					 {21,22,23,24,25}};
-		for(int i = 0; i < 5; i++) {
-//			System.out.print(a[3][i]);
-			if(a[3][i] % 2 ==0) {
-				System.out.print(a[3][i]+"\t");
+		for(int i = 0; i < a.length; i++) {
+			if(a[3][i] % 2 == 0) {
+				System.out.print(a[3][i]+" ");
 			}
 		}
 	}
-
+		
 }
