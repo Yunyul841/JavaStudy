@@ -54,7 +54,6 @@ public class _100_개별프로젝트 {
 				System.out.println("중간 집계 합니다!" + sum + "점입니다");
 				System.out.println("넌 안되것다...가망이 없긴한데..");
 				System.out.println("다시 해보자!!");
-				// 컨티뉴로 for문을 다시 계속 돈디.
 
 			}
 
@@ -94,6 +93,7 @@ public class _100_개별프로젝트 {
 			}
 		}else {
 			System.out.println("고생했어~");
+
 		}
 	}
 }

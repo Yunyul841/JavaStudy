@@ -24,6 +24,7 @@ public class _00_Test {
 			}else {
 				System.out.println(lotto[i]);
 				
+				
 			}
 		}
 		

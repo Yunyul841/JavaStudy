@@ -47,5 +47,7 @@ public class _03_과제 {
 				continue;
 			}
 		}
+		
+				
+		}
 	}
-}
