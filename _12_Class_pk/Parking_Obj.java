@@ -3,11 +3,13 @@ package _12_Class_pk;
 public class Parking_Obj {
 	
 	String name = null;
-	int carNum = 0;
+	String carNum = null;
+	String number = null;
 	
 	public void prt() {
 		System.out.println("--- paking info---");
-		System.out.println(name);
-		System.out.println(carNum);
+		System.out.println("소유자 이름 :"+ name);
+		System.out.println("소유자 전화번호 :"+number);
+		System.out.println("자동차 번호 :"+carNum);
 	}
 }

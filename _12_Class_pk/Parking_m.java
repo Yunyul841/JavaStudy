@@ -20,9 +20,9 @@ public class Parking_m {
 			if(number == 1) {
 				add();
 			}else if(number == 2) {
-				yun();
+				select();
 			}else if(number == 3) {
-//				yul();
+				delete();
 			}else if(number == 4) {
 				allList();
 			}else {
@@ -30,13 +30,16 @@ public class Parking_m {
 			}
 		}	
 	}
+	// 자동차 등록
 	public void add() {
 		System.out.println("자동차 등록");
 		Parking_Obj parking = new Parking_Obj(); 
-		System.out.println("자동차 이름 입력");
+		System.out.println("이름을 입력하세요");
 		parking.name = in.nextLine();
+		System.out.println("전화번호를 입력하세요");
+		parking.number = in.nextLine();
 		System.out.println("자동차 번호 입력");
-		parking.carNum = in.nextInt();
+		parking.carNum = in.nextLine();
 			for(int i = 0; i < clist.length; i++) {
 				// int i = 0일떄 i가 clist.length보다 작을 떄 i가 증가
 				if(clist[i] == null) {
@@ -51,6 +54,7 @@ public class Parking_m {
 			}
 		}
 	}
+	// 자동차 전체보기
 	public void allList() {
 		System.out.println("자동차 전체보기");
 		for(int i = 0; i < clist.length; i++) {
@@ -62,11 +66,34 @@ public class Parking_m {
 			}
 		}
 	}
-	public void yun() {
+	// 자동차 조회
+	public void select() {
 		System.out.println("자동차 조회");
-		
-		
+		System.out.println("차 번호를 입력하세요");
+		String carNum = in.nextLine();
+		for(int i = 0; i < clist.length; i++) {
+			if(carNum.equals(clist[i].carNum)) {
+				clist[i].prt();
+				break;
 			}
+		}
 	}
+	// 자동차 번호 삭
+	public void delete() {
+	System.out.println("자동차 번호 삭제");
+	String carNum = in.nextLine();
+		for(int i = 0; i < clist.length; i++) {
+			if(carNum.equals(clist[i].carNum)) {
+				clist[i] = null;
+				break;
+			}
+		}
+	}
+}
+		
+	
+	
+	
+
 
 
