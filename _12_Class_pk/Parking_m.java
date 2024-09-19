@@ -14,16 +14,16 @@ public class Parking_m {
 			System.out.println("3. 삭제");
 			System.out.println("4. 전체보기");
 			System.out.println("선택>>>>");
-			int number = in.nextInt();
-			in.nextLine();
-			System.out.println(number+"선택함");
-			if(number == 1) {
+			int selNum = in.nextInt(); // nextInt()는 엔터 전까지 입력된 숫자를 가져옴 
+			in.nextLine();  // nextLine은 Enter를 치기 전까지 쓴 문자열을 모두 리턴(반환)ㄴ
+			System.out.println(selNum+"선택함");
+			if(selNum == 1) {
 				add();
-			}else if(number == 2) {
+			}else if(selNum == 2) {
 				select();
-			}else if(number == 3) {
+			}else if(selNum == 3) {
 				delete();
-			}else if(number == 4) {
+			}else if(selNum == 4) {
 				allList();
 			}else {
 				break;
@@ -72,8 +72,8 @@ public class Parking_m {
 		System.out.println("차 번호를 입력하세요");
 		String carNum = in.nextLine();
 		for(int i = 0; i < clist.length; i++) {
-			if(carNum.equals(clist[i].carNum)) {
-				clist[i].prt();
+			if(carNum.equals(clist[i].carNum)) { // equals()는 비교하고자 하는 대상의 값 자체를 비교한다
+				clist[i].prt(); // 
 				break;
 			}
 		}
