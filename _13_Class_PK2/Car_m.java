@@ -36,9 +36,9 @@ public class Car_m {
 		// 차에다가 값을 저장한다.
 		// 차를 배열에 등록한다.	carList[] 저장
 		Car_Obj temp = new Car_Obj();
-		System.out.println("자동차 번호 입력하세요");
+		System.out.println("자동차 번호 입력");
 		temp.carNumber = in.nextLine();
-		System.out.println("자동차 소유자 이름을 임력");
+		System.out.println("자동차 소유자 이름을 입력");
 		temp.carUser = in.nextLine();
 		// 배열에 저장...
 		// 빈칸을 찾자 빈칸은 배열의 Value값이 null이다.
