@@ -72,20 +72,23 @@ public class Parking_m {
 		System.out.println("차 번호를 입력하세요");
 		String carNum = in.nextLine();
 		for(int i = 0; i < clist.length; i++) {
-			if(carNum.equals(clist[i].carNum)) { // equals()는 비교하고자 하는 대상의 값 자체를 비교한다
+			if(carNum.equals(clist[i].carNum)) { // equals()는 문자열의 비교하고자 하는 대상의 값(내용) 자체를 비교한다
 				clist[i].prt(); // 
 				break;
 			}
 		}
 	}
-	// 자동차 번호 삭
+	// 자동차 번호 삭제
 	public void delete() {
 	System.out.println("자동차 번호 삭제");
 	String carNum = in.nextLine();
 		for(int i = 0; i < clist.length; i++) {
-			if(carNum.equals(clist[i].carNum)) {
-				clist[i] = null;
-				break;
+			if(clist[i] != null) {
+				if(carNum.equals(clist[i].carNum)) {
+					clist[i] = null;
+					break;
+				
+			}
 			}
 		}
 	}

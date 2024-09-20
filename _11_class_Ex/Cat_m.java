@@ -17,7 +17,7 @@ public class Cat_m {
 			System.out.println("3. 수정");
 			System.out.println("4. 전체보기");
 			System.out.println("선택 >>");
-			int selNum = in.nextInt();
+			int selNum = in.nextInt();	// int selNum 지역변수생성.
 			in.nextLine();
 			System.out.println(selNum+"을 선택함");
 			if(selNum == 1) {
@@ -39,7 +39,7 @@ public class Cat_m {
 		// Scanner in = new Scanner(System.in); // 키보드로 입력받을려고 선언함
 		System.out.println("고양이 등록");
 		// 새로운 고양이 만들어야죠..
-		Cat_Obj cat = new Cat_Obj();
+		Cat_Obj cat = new Cat_Obj();	// Cat_Obj cat 지역변수생성
 		System.out.println("고양이 이름을 입력");
 		cat.name = in.nextLine();
 		
