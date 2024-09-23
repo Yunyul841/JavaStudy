@@ -35,9 +35,11 @@ public class C_center {
 		// 삭제기능
 		System.out.println("삭제할 Id를 입력하세요");
 		String stId = in.nextLine();
+		System.out.println("삭제할 Name를 입력하세요");
+		String git = in.nextLine();
 		for(int i = 0; i < clist.length; i++) {
 			if(clist[i] != null) {
-				if(clist[i].c_Id.equals(stId)) {
+				if(clist[i].c_Id.equals(stId) && clist[i].c_Name.equals(git)) {
 					clist[i] = null;
 					break;
 				}
@@ -73,7 +75,7 @@ public class C_center {
 			}
 		}
 	}
-		
+	
 	
 	private void add() {
 		// 고객가입 기능
