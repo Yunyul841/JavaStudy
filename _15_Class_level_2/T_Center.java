@@ -1,0 +1,43 @@
+package _15_Class_level_2;
+
+import java.util.Scanner; 
+
+public class T_Center {
+	Company_T infoT = new Company_T();
+	T_one[] tlist = new T_one[5];
+	public T_Center() {			// 생략이 된 상태
+		Scanner in = new Scanner(System.in);
+		while(true) {
+			System.out.println("1. 등록");
+			System.out.println("2. 수정");
+			System.out.println("3. 전체보기");
+			System.out.println("4. 종료");
+			System.out.println("메뉴선택 >>");
+			int selNum = in.nextInt();
+			in.nextLine();
+			if(selNum == 1) {
+				add();
+			}else if(selNum == 2) {
+				mod();
+			}else if(selNum == 3) {
+				tlist();
+			}else if(selNum == 4) {
+				break;
+			}
+		}
+	}
+
+	private void tlist() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void mod() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void add() {
+		// TODO Auto-generated method stub
+	}
+}
