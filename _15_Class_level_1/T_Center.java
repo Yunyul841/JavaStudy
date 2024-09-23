@@ -25,7 +25,7 @@ public class T_Center {
 			}else if(selNum == 2) {
 				mod();
 			}else if(selNum == 3) {
-				listall();
+				listall() ;
 			}else if(selNum == 4) {
 				break;
 			}
@@ -46,13 +46,11 @@ public class T_Center {
 		System.out.println("수정할 기차 번호 입력");
 		Scanner in = new Scanner(System.in);
 		String modNum = in.nextLine();
-		
 		// 조건을 걸어 본다. 기차번호는 유니크하다.
 		for(int i = 0; i < tlist.length; i++) {
-			
-			String mnum = tlist[i].getTunm();
-			if(mnum.equals(modNum)) {
-//			if(tlist[i].tNum.equals(modNum)) {
+//			String mnum = tlist[i].getTunm();
+//			if(mnum.equals(modNum)) {s
+			if(tlist[i].tNum.equals(modNum)) {
 				// 기차번호가 유니크 하다는 것은 뒤에 있는
 				// 기차 번호랑 중복이 될 수 없다.
 				// 그래서 바로 수정이 가능하다.
@@ -61,9 +59,9 @@ public class T_Center {
 				break;	
 			}
 		}
-	}
-		
 //	}
+		
+	}
 
 	private void add() {
 		// TODO Auto-generated method stub
@@ -82,13 +80,4 @@ public class T_Center {
 			}
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
