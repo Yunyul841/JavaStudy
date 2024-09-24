@@ -14,7 +14,6 @@ public class Main1 {
 		}else {
 			System.out.println("비번틀림");
 		}
-		System.out.println(t.maskName("♥"));
+		System.out.println(t.maskName("◆"));
 	}
-
 }
