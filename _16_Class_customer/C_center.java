@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class C_center {
 	Scanner in = new Scanner(System.in); 
-	C_one[] clist = new C_one[10]; // 객체를 저정하는 배열로, 최대 10개의 고객정보를 저장할 수 있다.
+	C_one[] clist = new C_one[10]; // 객체를 저정하는 배열로, 최대 10개의 고객정보를 저장함
 	public C_center() {
 		while(true) {
 			mune(); // 메뉴를 출력하는 메서드
-			int selNum = in.nextInt();//nextInt() 메서드를 사용하여 사용자가 입력한 정수를 가져온
-			in.nextLine(); // nextLine()으로 문자열을 입력받을 때 문제가 발생하지 않도록 하기 위
+			int selNum = in.nextInt();//nextInt() 메서드를 사용하여 사용자가 입력한 정수를 가져옴
+			in.nextLine(); // nextLine()으로 문자열을 입력받을 때 문제가 발생하지 않도록 하기 위해서 
 			if(selNum == 1) {
 				add();
 			}else if(selNum == 2) {
@@ -21,6 +21,7 @@ public class C_center {
 			}else if(selNum == 5) {
 				break;
 			}
+			
 		}	
 	}
 	public void mune() {

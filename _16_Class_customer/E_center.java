@@ -43,7 +43,6 @@ public class E_center {
 				break;
 			}
 		}
-		
 	}
 }
 	
