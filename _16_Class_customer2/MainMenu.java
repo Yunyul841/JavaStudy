@@ -12,7 +12,7 @@ public class MainMenu {
 	    // 이 부분을 생각해서 공부 하자
 	//의족관계 설정 끝
 	
-	MainMenu(){
+	public MainMenu(){
 		if(eventAdm == null) {
 			eventAdm = new EventAdmin();
 		}
