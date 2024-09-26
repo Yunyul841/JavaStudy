@@ -1,4 +1,4 @@
-package _16_Class_customer2;
+ package _16_Class_customer2;
 
 import java.util.Scanner;
 
