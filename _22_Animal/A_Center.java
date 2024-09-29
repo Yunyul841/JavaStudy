@@ -49,8 +49,9 @@ public class A_Center {
 		
 		for(int i = 0; i < alist.size(); i++) {
 			if(alist.get(i).aName.equals(modName) && alist.get(i).aAge.equals(modAge)) {
-//				alist.get(i).aName = chName;
 				alist.set(i, aaa);
+//				alist.get(i)=aaa;
+//				alist.get(i).aName = chName;
 				
 			}
 		}

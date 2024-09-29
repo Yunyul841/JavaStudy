@@ -13,6 +13,40 @@ public class TestMethod {
 		return maskingName;
 	}
 	
+	int age = 0;
+	public int aaa(int a) {
+		int abc = age+a;
+		return abc; 
+	}
+	
+	String name2 = "킹왕짱";
+	public String bbb(String c) {
+		String qwer = name2+c;
+		return qwer;
+				
+	}
+	int Age1 = 0;
+	public int t(int g) {
+		int nnn = Age1+g;
+		return nnn;
+	}
+	int ob = 0;
+	public int hhh(int c) {
+		int uu = ob + c;
+		return uu;
+	}
+	String sb = null;
+	public String jk (String  q) {
+		String asd = sb + q;
+		return asd;
+	}
+	String Nm = null;
+	public String qq(String h) {
+//		h = Nm+h;
+//		String z = Nm + h;
+		Nm += h;
+		return Nm;
+	}
 	
 	
 	
@@ -25,13 +59,32 @@ public class TestMethod {
 		}
 	}
 	
-	
-	
-	public void setName(String n) {
-		name=n;
+	public void setAge(int a) {
+		age=a;
 	}
 	
+	public void setName2(String Name ) {
+		name= Name;
+	}
 	
+	public void setName(String n) {	
+		name=n;
+	}
+	public void setNum(String t) {
+		Nm = t;
+	}
+	
+	public void setAge1(int g) {
+		Age1=g;
+	}
+	
+	public void setAge2(int num) {
+		ob = num;
+	}
+	public void setName4(String g) {
+		sb = g;
+	}
+
 	
 	public String getName() {
 		return name;
