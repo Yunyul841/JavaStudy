@@ -58,34 +58,27 @@ public class TestMethod {
 			return null;
 		}
 	}
-	
 	public void setAge(int a) {
 		age=a;
 	}
-	
 	public void setName2(String Name ) {
 		name= Name;
 	}
-	
 	public void setName(String n) {	
 		name=n;
 	}
 	public void setNum(String t) {
 		Nm = t;
 	}
-	
 	public void setAge1(int g) {
 		Age1=g;
 	}
-	
 	public void setAge2(int num) {
-		ob = num;
+		ob = num; 
 	}
 	public void setName4(String g) {
 		sb = g;
 	}
-
-	
 	public String getName() {
 		return name;
 	}

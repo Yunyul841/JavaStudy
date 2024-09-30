@@ -32,10 +32,7 @@ public class Cking_m {
 		System.out.println("3. 조회");
 		System.out.println("4. 삭제");
 		System.out.print("선택>>  ");
-		
 	}
-	
-
 	public void ckadd() { // 등록
 		Cking_One k = new Cking_One();
 		Scanner in = new Scanner(System.in);
@@ -45,7 +42,6 @@ public class Cking_m {
 		k.coking = in.nextLine();
 		klist.add(k);
 	}
-	
 	public void ckset() { // 수정
 		Cking_One abc = new Cking_One();
 		Scanner in = new Scanner(System.in);
@@ -59,25 +55,20 @@ public class Cking_m {
 		String kking = in.nextLine();
 		abc.ckname=kkname;
 		abc.coking=kking;
-		
 		for(int i = 0; i < klist.size(); i++) {
 				if(klist.get(i).ckname.equals(kname) && klist.get(i).coking.equals(king)) {
 					klist.set(i, abc);
 					System.out.println("요리사명과 요리가 변경되었습니다");
 					break;
-				}
 			}
 		}
-	
-
+	}
 	public void cklist() { // 조회
 		System.out.println("메뉴 모두보기");
 		for(int i = 0; i < klist.size(); i++) {
-		klist.get(i).prt();	
+		klist.get(i).prt();
 		}
-
 	}
-
 	public void ckdel() { // 삭제
 		Scanner in = new Scanner(System.in);		System.out.println("삭제할 요리사 이름을 입력");
 		String aNme = in.nextLine();

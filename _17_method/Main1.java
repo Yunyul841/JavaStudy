@@ -25,7 +25,7 @@ public class Main1 {
 		System.out.println(t.bbb("윤율"));
 		System.out.println(t.t(10));
 		System.out.println(t.hhh(1));
-		System.out.println(t.jk("ㅈㄴ잘생김 "));
+		System.out.println(t.jk("잘생김 "));
 		String z = t.qq("조준곤");
 		System.out.println(z);
 	}
