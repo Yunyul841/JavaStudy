@@ -14,6 +14,8 @@ public class Main {
 		m.prt();	// 가능
 		m.setName("1234");
 		m.setName("5678");
+		m.setName("윤율");
+
 		
 	}
 }

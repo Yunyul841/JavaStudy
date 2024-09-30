@@ -23,9 +23,9 @@ public class CatDTO {
 	public int getAge() {
 		return age;
 	}
-	public void setAge(int age) {
+	public void setAge(int age) {  
 		this.age = age;
 	}
-	
+	 
 	// 마우스 우클릭 → Source(Alt + Shift + S) → Generate Getters and Setters
 }
