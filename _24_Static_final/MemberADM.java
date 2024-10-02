@@ -14,7 +14,7 @@ public class MemberADM {
 	}
 	
 	public static void prt() {
-//		System.out.println(name);
+		System.out.println("윤율");
 	}
-
 }
+

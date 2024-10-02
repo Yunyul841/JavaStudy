@@ -33,7 +33,7 @@ public class Main {
 		mmm.compayName="kkk";
 		System.out.println(mm.name);
 		System.out.println(mm.compayName);
-		
+	
 //		MemberADM.teamName="kkk";
 		// 에러나는 이유?
 		// 상수는 초기값이 결정되면 값을 변경이 불가능 하기 떄문에 에러가 난다.
@@ -49,6 +49,9 @@ public class Main {
 		 // 상수 :  처음의 결정된 값은 변경이 불가능하다.
 		// static : 공용변수이다. 메모리를 같이 쓴다
 		// final : 초기값이 설정된 후 바꿀 수 없다.
+		
+		
+		
 		
 	}
 }

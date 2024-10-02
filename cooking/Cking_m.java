@@ -46,23 +46,26 @@ public class Cking_m {
 		Cking_One abc = new Cking_One();
 		Scanner in = new Scanner(System.in);
 		System.out.println("수정할 요리사 이름 입력해주세요");
-		String kname = in.nextLine();
+		String ckname = in.nextLine();
 		System.out.println("수정할 요리 이름을 입력해주세요");
-		String king = in.nextLine();
+		String coking = in.nextLine();
 		System.out.println("변경할 요리사 이름 입력");
 		String kkname = in.nextLine();
 		System.out.println("변경할 요리 이름 입력");
 		String kking = in.nextLine();
-		abc.ckname=kkname;
-		abc.coking=kking;
+		abc.ckname = kkname;
+		abc.coking = kking;
 		for(int i = 0; i < klist.size(); i++) {
-				if(klist.get(i).ckname.equals(kname) && klist.get(i).coking.equals(king)) {
-					klist.set(i, abc);
-					System.out.println("요리사명과 요리가 변경되었습니다");
-					break;
+			if(klist.get(i).ckname.equals(kkname) && klist.get(i).coking.equals(kking)) {
+				klist.set(i, abc);
+				
 			}
 		}
-	}
+		
+					System.out.println("요리사명과 요리가 변경되었습니다");
+			
+			}
+	
 	public void cklist() { // 조회
 		System.out.println("메뉴 모두보기");
 		for(int i = 0; i < klist.size(); i++) {
