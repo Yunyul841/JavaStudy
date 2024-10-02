@@ -1,6 +1,6 @@
 package _23_접근제어자_01;
 
-import _25_접근제어자_02.MemberOne;
+import _23_접근제어자_02.MemberOne;
 
 public class Main {
 
