@@ -35,7 +35,7 @@ public class Subjects_m {
 		System.out.print("선택 >>  ");
 	}
 	private void addS() {
-		// 등록
+		// 등록기능
 	Scanner in = new Scanner(System.in);
 	Grade_One aaa = new Grade_One();
 	System.out.println("학생의 이름을 입력하세요");
@@ -54,7 +54,7 @@ public class Subjects_m {
 		
 	}
 	public void delS() {
-		// 삭제	
+		// 삭제기능	
 		int cnt = 0;
 		Scanner in = new Scanner(System.in);
 		System.out.println("삭제할 아이디를 입력해주세요");
@@ -75,6 +75,7 @@ public class Subjects_m {
 
 
 	private void sear() {
+		// 검색기능
 		Scanner in = new Scanner(System.in);
 		System.out.println("검색할 이름을 입력하세요");
 		String Sname = in.nextLine();
@@ -88,7 +89,7 @@ public class Subjects_m {
 
 
 	public void AllS() {
-		// 전체보기
+		// 전체보기 기능
 		for(int i = 0; i < glist.size(); i++) {
 			glist.get(i).prt();
 		}
